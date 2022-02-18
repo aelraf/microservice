@@ -13,5 +13,5 @@ urlpatterns = [
         'put': 'update',
         'delete': 'destroy'
     })),
-    path(),
+    path('user', UserAPIView.as_view(), name='user'),
 ]
