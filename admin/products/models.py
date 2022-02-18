@@ -12,7 +12,7 @@ class Product(models.Model):
         ordering = ['id']
 
     def __str__(self):
-        return self.title + "  " + self.image
+        return str(self.title) + "  " + str(self.image)
 
 
 class User(models.Model):
